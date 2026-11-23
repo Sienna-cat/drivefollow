@@ -350,6 +350,16 @@ test('a contextual withdrawal after consent cancels the existing quote task', ()
   assert.equal(api.executeTask(state, task.id, { now: NOW }).ok, false);
 });
 
+test('an explicit WeCom withdrawal keeps cancellation priority over a later deferral in the same turn', () => {
+  const state = ready();
+  const task = api.confirmTask(state, api.buildCasePlan(state, 'customer_contact', NOW), NOW);
+  api.appendCustomerTurn(state, '企微也别发了，等我确认后再发', NOW);
+  assert.equal(state.analysis.permissions.wecom.quote.status, 'denied');
+  assert.equal(task.status, 'cancelled');
+  assert.ok(state.audit.some(event => event.type === 'task_cancelled' && event.taskId === task.id));
+  assert.equal(api.executeTask(state, task.id, { now: NOW }).ok, false);
+});
+
 test('an explicit cash correction replaces prior finance and clears its term with current evidence', () => {
   const state = start();
   api.appendCustomerTurn(state, '那分三年呢', NOW);

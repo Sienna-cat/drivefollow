@@ -69,7 +69,7 @@ function interpret(transcript) {
     // Negative permissions always take effect, including inside an otherwise unknown turn.
     const optOut = /不要再联系|别再联系|不要联系我|停止联系|取消.{0,4}报价/.test(text);
     const phoneDenied = /(?:不要|别|不许|禁止).{0,4}(?:打电话|电话)/.test(text);
-    const wecomDenied = /(?:不要|别|停止).{0,8}(?:企微|微信|发报价|发送报价)|(?:企微|微信).{0,4}(?:不要|别).{0,4}发/.test(text);
+    const wecomDenied = clauses.some(clause => /(?:不要|别|停止).{0,8}(?:企微|微信|发报价|发送报价)|(?:企微|微信).{0,4}(?:不要|别).{0,4}发/.test(clause));
     const quoteWithdrawn = clauses.some(clause => QUOTE_WITHDRAWAL.test(clause));
     if (optOut) for (const channel of ['phone', 'wecom']) for (const purpose of ['quote', 'marketing']) setPermission(channel, purpose, 'denied');
     if (phoneDenied) for (const purpose of ['quote', 'marketing']) setPermission('phone', purpose, 'denied');
@@ -77,7 +77,7 @@ function interpret(transcript) {
     if (quoteWithdrawn) for (const channel of ['phone', 'wecom']) setPermission(channel, 'quote', 'denied');
     // New sending conditions supersede earlier permission. Human review cannot
     // turn a pending customer confirmation into permission to send now.
-    if (uncertainPermission && !optOut && !quoteWithdrawn) setPermission('wecom', 'quote', 'unknown');
+    if (uncertainPermission && !optOut && !wecomDenied && !quoteWithdrawn) setPermission('wecom', 'quote', 'unknown');
     if (!unsafe) {
       if (/落地多少|落地价|优惠后.{0,4}多少|现在.{0,4}多少钱/.test(text)) { result.inquiry.landingPrice = true; citeInquiry(); }
       if (/有点贵|太贵|价格.{0,3}贵/.test(text)) { result.inquiry.priceConcern = true; citeInquiry(); }
