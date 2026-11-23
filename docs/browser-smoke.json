@@ -1,0 +1,41 @@
+{
+  "project": "drivefollow",
+  "checkedAt": "2026-11-23T04:03:50.408Z",
+  "runtime": "v24.22.3",
+  "browser": "Chromium / Playwright",
+  "baseURL": "http://127.0.0.1:5173",
+  "checks": [
+    {
+      "action": "all-navigation-views",
+      "views": [
+        "workspace",
+        "pipeline",
+        "knowledge",
+        "quality"
+      ],
+      "pass": true
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "route": "/portfolio.html",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "route": "/portfolio.html",
+      "width": 390,
+      "pass": true
+    }
+  ],
+  "issues": [],
+  "pass": true
+}

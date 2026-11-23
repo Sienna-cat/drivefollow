@@ -1,0 +1,41 @@
+✔ contact refusal blocks an invitation even when intent is high (34.837003ms)
+✔ an unresolved complaint routes to service recovery (0.282048ms)
+✔ expired offers are excluded from the draft and usable citations (6.722611ms)
+✔ unknown budget is explicitly requested and not invented (0.483451ms)
+✔ priority sorts explicit trial requests ahead of dormant unqualified leads (0.220365ms)
+✔ a booking requires the customer to have confirmed the time (3.79871ms)
+✔ a competing booking cannot overwrite a reserved time slot (0.301327ms)
+✔ booking confirmation is idempotent and changes the customer stage (0.885492ms)
+✔ blocked customers cannot bypass contact rules through the booking tool (0.467375ms)
+✔ repeated adoption creates only one open task for a customer (0.673082ms)
+✔ buildFollowEvidence does not invent an adoption denominator (3.685755ms)
+✔ buildFollowEvidence separates direct adoption, edited adoption, and rejection (0.309766ms)
+✔ NIO knowledge contains official source metadata and freshness boundaries (3.13842ms)
+✔ NIO model catalog exposes the four sourced models with cautious user-fit notes (0.321044ms)
+✔ NIO user-fit docs match the selected real vehicle without citing another model (30.924411ms)
+✔ a NIO audience hypothesis never becomes a customer fact or assumed need (2.149133ms)
+✔ NIO service docs avoid turning live counts or official caveats into promises (0.362328ms)
+✔ published static demo generates a sourced plan without any API request (40.013614ms)
+✔ static publishing preserves refusal and complaint blocking (0.350105ms)
+✔ server mode still uses the API response with customer data (9.362241ms)
+✔ server failure preserves a usable rule result with an explicit fallback label (2.104674ms)
+✔ the selectable catalog and all seeded customers and slots use sourced real vehicles (4.008894ms)
+✔ opening a legacy browser store migrates vehicles and citations without resetting customer work (44.188408ms)
+✔ legacy records remain usable when the browser cannot persist the migration (0.585868ms)
+✔ config reports simulation mode without exposing server secrets (50.066603ms)
+✔ planning endpoint rejects malformed JSON and invalid lead shapes (38.418952ms)
+✔ partial model configuration is not reported as ready (5.686694ms)
+✔ model receives valid knowledge and returned drafts are explicitly labeled (8.015446ms)
+✔ planning endpoint returns source-backed draft with actual execution mode (6.899514ms)
+✔ model failure falls back explicitly instead of pretending a model succeeded (4.668442ms)
+✔ blocked leads never invoke the model (4.198786ms)
+✔ private configuration and source tests are not served as static files (7.297682ms)
+✔ planning accepts a NIO lead and returns only its brand and model evidence (3.600905ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 501.050397
