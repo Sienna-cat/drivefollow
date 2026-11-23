@@ -1,0 +1,7 @@
+/* V5 retains the existing page grid; appendices are optional reading. */
+.appendix .lead{font-size:18px;margin-bottom:22px}.compact-table table{font-size:16px;line-height:1.6}.compact-table td{padding:12px 16px}.compact-table td:first-child{width:22%;font-size:15px}.compact-table td:nth-child(2){width:37%}
+#course-case .flow{margin:12px 0 22px}#course-case .flow span{font-size:16px}#course-case .cards{margin-top:20px}#course-case .cards p{font-size:17px}#course-case .note{margin-top:18px}
+#metrics-card td{padding:10px 15px}#metrics-card .caption{margin-top:14px!important}#decision-evidence .note{margin-top:18px;font-size:15px}
+.query-table table{font-size:15px;line-height:1.45}.query-table th{padding:7px 12px}.query-table td{padding:7px 12px}.query-table td:first-child{width:7%;min-width:0}.query-table td:nth-child(2){width:46%}
+#interview-appendix .two{margin-top:10px}#interview-appendix .panel{padding:24px}#interview-appendix .panel p{font-size:17px}#interview-appendix .note{margin-top:18px}
+@media screen and (max-width:900px){.compact-table,.query-table{overflow-x:auto}.compact-table table{min-width:680px}.query-table table{min-width:650px}#course-case .flow span{font-size:15px}}

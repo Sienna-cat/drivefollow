@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0c1c22" />
   <title>DriveFollow · 汽车销售跟进工作台</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -20,7 +20,7 @@
         <button class="nav-item" data-view="knowledge"><span class="nav-icon">▤</span>产品知识库</button>
         <button class="nav-item" data-view="quality"><span class="nav-icon">◒</span>质量与迭代</button>
       </nav>
-      <div class="sidebar-footer"><a href="/portfolio.html" class="portfolio-link"><span>↗</span>查看作品集说明</a><div class="demo-badge"><span class="status-dot"></span><span><b>演示环境</b><small>真实车型 · 模拟客户</small></span></div><button id="resetDemo" class="text-button">重置演示数据</button></div>
+      <div class="sidebar-footer"><a href="./portfolio.html" class="portfolio-link"><span>↗</span>查看作品集说明</a><div class="demo-badge"><span class="status-dot"></span><span><b>演示环境</b><small>真实车型 · 模拟客户</small></span></div><button id="resetDemo" class="text-button">重置演示数据</button></div>
     </aside>
     <main class="main-content" id="main">
       <header class="topbar"><div class="mobile-brand"><button id="menuToggle" class="icon-button" aria-label="打开菜单">☰</button><b>DriveFollow</b></div><div class="topbar-context"><span class="context-dot"></span><span>华东体验中心</span><span class="divider"></span><span id="currentDate">2026 / 11 / 19 · 演示日</span><span class="demo-pill">DEMO</span></div><div class="topbar-actions"><button class="icon-button" id="helpButton" title="演示指南" aria-label="演示指南">?</button><button class="icon-button" id="exportButton" title="导出本地记录" aria-label="导出本地记录">↥</button><span class="avatar avatar-orange">林</span></div></header>
@@ -45,6 +45,6 @@
   <div id="toastRegion" class="toast-region" aria-live="polite"></div>
   <dialog id="newLeadDialog" class="modal"><form method="dialog" id="newLeadForm"><div class="modal-header"><div><span class="eyebrow">NEW LEAD</span><h2>新建客户</h2></div><button class="icon-button" type="button" id="closeNewLead" aria-label="关闭">×</button></div><p class="modal-intro">先记录最少必要信息，后续可以让 Agent 帮你补全跟进计划。</p><label>客户姓名<input name="name" maxlength="40" required placeholder="例如：张先生" /></label><label>意向车型<select name="model" required><option value="">正在加载官方车型…</option></select></label><label>购车预算<input name="budget" maxlength="80" placeholder="例如：20–25 万（可留空）" /></label><label>客户需求<textarea name="history" maxlength="800" rows="3" placeholder="客户在意什么？记录你听到的原话"></textarea></label><div class="modal-actions"><button type="button" class="secondary-button" id="cancelNewLead">取消</button><button class="primary-button" value="default">添加客户</button></div></form></dialog>
   <dialog id="detailDialog" class="modal detail-modal" aria-labelledby="detailTitle"></dialog>
-  <script type="module" src="/app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>

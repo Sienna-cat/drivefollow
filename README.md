@@ -1,5 +1,16 @@
 # DriveFollow · 可运行 Web Demo + 作品集
 
+## 在线 Demo（无需安装）
+
+**[点击直接操作 Drivefollow →](https://sienna-cat.github.io/drivefollow/)**
+
+[作品集与四个 Demo 总入口](https://sienna-cat.github.io/drivefollow/portfolio/#demos) · [公开源码](https://github.com/Sienna-cat/drivefollow)
+
+打开网址即可体验，无需登录、下载代码或启动本地服务。使用合成数据与浏览器规则演示，不调用真实电话、企微或大模型；操作仅在当前浏览器内保存，不会影响其他访客。DriveReach 的 40 个规则场景会在浏览器中实际执行。
+
+更新 `main` 后，GitHub Actions 会运行测试并自动部署。可用 `npm run build:static` 生成 `dist/` 静态站点。
+
+
 面向汽车一线销售顾问的跟进与试驾邀约工作流演示。独立目录，无需安装第三方依赖。
 
 **面试阅读入口：[V5 作品集主册与案例验证](docs/portfolio/README.md)**。含汽车营销、课程咨询两条路线，历史指标口径及观望分流规则对照。

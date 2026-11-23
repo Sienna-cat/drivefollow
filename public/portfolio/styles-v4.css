@@ -1,0 +1,15 @@
+/* V4: ownership, implemented controls, acceptance and role transfer. */
+.ownership-cards article,.transfer-cards article{padding:24px;background:var(--mint);min-width:0}
+.ownership-cards h3,.transfer-cards h3{font-size:22px}.ownership-cards p,.transfer-cards p{font-size:17px}
+.ownership-cards strong{display:block;font-size:13px;margin-top:22px;color:var(--green)}
+.ownership-cards .primary{background:var(--ink);color:var(--paper)}.ownership-cards .primary .eyebrow,.ownership-cards .primary strong{color:#bbd6c8}
+.runtime-table table,.acceptance-table table{font-size:16px}.runtime-table td,.acceptance-table td{padding:16px 17px}.runtime-table td:first-child{width:23%}.runtime-table td:last-child{width:25%;font-size:14px}
+.acceptance-table td:first-child{width:15%}.acceptance-table td:last-child{width:21%;font-size:14px}
+.release-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:22px}.release-strip span{background:var(--mint);font-size:15px;padding:15px 19px}.release-strip b{display:block;font-size:17px;margin-bottom:5px}
+.transfer-cards{margin-top:20px}.transfer-cards article{border-top:3px solid var(--green)}
+#closing .closing-line{margin-top:25px;line-height:1.8}#closing .closing-line span{font-size:15px;color:#c2d3c7}
+#cover .cover-note small{font-size:16px;color:#c2d3c7}.cover h1{font-size:66px}
+@media screen and (max-width:900px){.runtime-table,.acceptance-table{overflow-x:auto}.runtime-table table,.acceptance-table table{min-width:630px}.release-strip{grid-template-columns:1fr;gap:8px}.ownership-cards article,.transfer-cards article{padding:22px}.cover h1{font-size:39px}.transfer-cards{margin-top:0}.ownership-cards strong{margin-top:14px}}
+
+/* V4.1: keep the change record compact in the 16-page booklet. */
+#core .cards{margin-top:22px}#core .cards article{padding-top:16px}#core .cards p{font-size:17px}#core .change-note{margin-top:18px;padding:12px 18px}#core .caption{margin-top:12px!important}
