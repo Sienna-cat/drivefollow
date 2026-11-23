@@ -1,5 +1,10 @@
 # 石亚楠 AI营销与任务型Agent作品集
 
+**[在线作品集与四个可操作 Demo →](https://sienna-cat.github.io/drivefollow/portfolio/#demos)**
+
+无需登录、安装或配置。模拟数据与浏览器规则，可直接生成建议、审核任务、体验外呼协同与运行评测。
+
+
 V5，2026-11-23。以工作中的意向分流决策为主线，用四个独立原型与可复跑规则说明任务、人审和异常控制。互联网智能服务方向可从课程咨询案例开始。
 
 **[打开22页作品集PDF](portfolio-v5.pdf)** · [直接下载PDF](https://raw.githubusercontent.com/Sienna-cat/drivefollow/main/docs/portfolio/portfolio-v5.pdf)

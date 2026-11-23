@@ -5,3 +5,6 @@
 .query-table table{font-size:15px;line-height:1.45}.query-table th{padding:7px 12px}.query-table td{padding:7px 12px}.query-table td:first-child{width:7%;min-width:0}.query-table td:nth-child(2){width:46%}
 #interview-appendix .two{margin-top:10px}#interview-appendix .panel{padding:24px}#interview-appendix .panel p{font-size:17px}#interview-appendix .note{margin-top:18px}
 @media screen and (max-width:900px){.compact-table,.query-table{overflow-x:auto}.compact-table table{min-width:680px}.query-table table{min-width:650px}#course-case .flow span{font-size:15px}}
+
+/* Online demos: clear primary actions, with comfortable touch targets. */
+@media screen{#demos .repo-actions{border:0;padding-top:0;margin-top:12px;gap:10px}#demos .repo-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:6px;background:var(--green);color:#fff;font-size:14px;font-weight:600;text-decoration:none}#demos .repo-actions a:hover{background:var(--ink);color:#fff}#demos .repo-url{font-size:13px;font-weight:400}#demos .repo-card{padding-bottom:18px}}
