@@ -1,134 +1,35 @@
-# DriveFollow · 可运行 Web Demo + 作品集
+# DriveFollow · 汽车销售跟进与询价承接
 
-## V7 连续询价案例
+[连续询价案例](https://sienna-cat.github.io/drivefollow/inquiry.html) · [销售工作台](https://sienna-cat.github.io/drivefollow/) · [专业作品集](https://sienna-cat.github.io/drivefollow/portfolio/) · [产品设计](https://sienna-cat.github.io/drivefollow/evidence.html)
 
-[直接体验](https://sienna-cat.github.io/drivefollow/inquiry.html) · [产品任务与验收](https://sienna-cat.github.io/drivefollow/evidence.html) · [22页专业作品集](https://sienna-cat.github.io/drivefollow/portfolio/)
+将客户原话、报价条件、联系许可、车型知识和跟进任务组织在一个可操作流程中。顾问查看依据、补充条件、确认任务，再处理执行和反馈。
 
-收到同一条“贵、不急、问落地价”的合成对话后，逐轮保存咨询/时间/许可与证据；补条件，模拟核价与企微关系核验，再由人工确认任务。创建与执行分开、防重、撤回取消、执行前复查；独立浏览器存储与JSON导出。未知表达保留人工复核，规则不等同通用模型。旧销售工作台保留。
+## 核心设计
+- 多轮询价：诉求、时间、许可分别记录，字段关联原话。
+- 核实与确认：关系和报价独立检查，人工确认后创建任务。
+- 状态管理：创建与执行分开，重复确认复用任务，条件变化重新检查，撤回取消待办。
+- 销售工作台：客户管线、资料引用、草稿编辑、待办与试驾预约。
+- 记录与反馈：刷新恢复、操作历史、采用/修改/驳回与 JSON 导出。
 
-实现：`public/inquiry.html`、`public/inquiry.js`、`public/modules/inquiry-case.js`；回归：`tests/inquiry-case.test.mjs`。任务、关系、知识与触达均为模拟，不提供真实车价。新案例不调用模型；旧工作台的可选模型接口仅用于草稿。
+## 运行
+公开网页使用示例数据，业务动作在浏览器内演示。连续询价使用规则状态流；销售工作台支持在本地配置模型草稿服务。
 
-
-## 在线 Demo（无需安装）
-
-**[点击直接操作 Drivefollow →](https://sienna-cat.github.io/drivefollow/)**
-
-[作品集与四个 Demo 总入口](https://sienna-cat.github.io/drivefollow/portfolio/#demos) · [公开源码](https://github.com/Sienna-cat/drivefollow)
-
-打开网址即可体验，无需登录、下载代码或启动本地服务。使用合成数据与浏览器规则演示，不调用真实电话、企微或大模型；操作仅在当前浏览器内保存，不会影响其他访客。DriveReach 的 40 个规则场景会在浏览器中实际执行。
-
-更新 `main` 后，GitHub Actions 会运行测试并自动部署。可用 `npm run build:static` 生成 `dist/` 静态站点。
-
-
-面向汽车一线销售顾问的跟进与试驾邀约工作流演示。独立目录，无需安装第三方依赖。
-
-**面试阅读入口：[V5 作品集主册与案例验证](docs/portfolio/README.md)**。含汽车营销、课程咨询两条路线，历史指标口径及观望分流规则对照。
-
-## 快速启动（独立项目版）
-
-需要 [Node.js 24 LTS](https://nodejs.org/) 或更高版本，以及 Chrome、Edge、Firefox 或 Safari。四个项目都没有第三方运行依赖，无需 `npm install`，也不需要安装 Codex。
-
-1. 下载或解压整个 `drivefollow` 文件夹。
-2. 在此目录打开终端，执行：
-
+需要 Node.js 24+，无需安装运行依赖。
 ```sh
 npm start
-```
-
-3. 浏览器打开 <http://127.0.0.1:4173>。终端保持运行；结束时按 Ctrl+C。
-
-macOS 可双击 `启动演示.command`（权限提示时在终端执行 `sh start.sh`）；Windows 可双击 `start.bat`；Linux/macOS 可执行 `sh start.sh`。脚本在本机兼容 Codex 自带 Node，其他电脑安装标准 Node.js 即可。
-
-端口占用时，复制 `.env.example` 为 `.env`，修改 `PORT` 后重新执行 `npm start`。`.env` 只留在本地，不提交 GitHub。
-
-```sh
 npm test
+npm run build:static
 ```
+本地地址 http://127.0.0.1:4173 。模型配置见 `.env.example`；密钥仅在本地服务端读取。GitHub Actions 在 main 更新后测试并发布静态页面。
 
-交付验证见 [docs/交付验证.md](docs/交付验证.md)。历史设计和旧验证保留原日期，不能当成本次重新验证。
+## 源码导航
+| 位置 | 职责 |
+| --- | --- |
+| public/modules/inquiry-case.js | 询价字段、许可、知识与任务状态 |
+| public/inquiry.js | 连续案例交互与记录导出 |
+| public/modules/domain.js | 销售工作台业务规则 |
+| server.mjs | 本地接口、输入校验与可选模型适配 |
+| tests/ | 业务行为与接口回归 |
+| docs/portfolio/ | 项目方案、结果与规则实验 |
 
-## 完整演示
-
-1. 选择陈先生，生成建议，展开实际执行步骤并点击来源查看原文。
-2. 修改草稿，采用并创建待办。客户管线能看到待办记录。
-3. 选择试驾时段，勾选“客户已明确同意”后确认。已有档期不可重复占用。
-4. 刷新后，任务、预约和反馈仍保存在同一浏览器。也可记录未接通、拒绝联系或后续行动。
-5. 对刘先生生成建议，查看拒绝联系阻断；对唐女士查看投诉处理。
-6. 在质量页运行 8 个合成规则案例，查看采用、修改与驳回反馈，导出 JSON。
-7. 从左侧进入作品集说明。页面里的访谈与试点明确标记为待验证。
-
-## 数据与模型边界
-
-- 车型全部采用蔚来官网可核查的 7 个真实车型版本，知识库有 19 条官网依据知识。12 个初始客户和全部 16 个试驾档期为模拟数据。本项目非蔚来官方产品。
-- 演示业务日期固定为 2026-11-19；操作日志记录实际时间，以北京时间显示。
-- 默认使用规则生成，不伪装成实际模型调用。
-- 记录存于浏览器 LocalStorage；没有账户隔离、共享数据库、真实 CRM、消息发送或门店系统。它是本地演示，不是生产系统。
-- 评测是规则回归测试，不代表模型话术质量、用户可用性或转化提升。
-
-## 蔚来知识库
-
-进入「产品知识库」，按蔚来、车型资料、适配人群、服务或销售边界筛选。点击资料可查看人工整理摘要、官方链接、采集日期及使用边界。
-
-- 车型：ES6、ET5、ET5T、ET7、ES8 六/七座版、ES8 大五座版、ES9。当前覆盖已采集页面，不代表完整在售目录；ET9、EC6、EC7 尚未收录。
-- 服务：NIO Power 换电/充电/一键加电/电池升级，NIO Service 售后/服务无忧，NIO House 与 NIO App 补能入口。
-- 来源采集日：2026-11-19；具体来源见 [来源清单](docs/nio-sources.md)。服务中心统计的源数据日期为 2026-10-31，站点等数字仅为采集时快照，不随页面自动更新。
-- 官方事实、定位推断、销售边界分别标记。用户适配属于基于官方产品定位的销售假设，未经过真实用户调研；不写进客户事实。
-- 推荐话术不直接承诺实时价格、优惠、固定续航或服务权益。配置、站点状态、服务范围和权益需要沟通前核对。
-- 检索按车型和有效期匹配；初始客户、新建选项、档期和作品集展示全部引用真实车型。
-
-推荐演示：新建客户并选择蔚来 ES6 → 补充预算与关注重点 → 生成建议 → 展开「车型定位与适配参考」→ 点击官方来源 → 采用建议 → 确认模拟试驾。客户与档期依然是本地演示，不连接蔚来预约系统。
-
-旧版本的浏览器记录会自动迁移到真实车型，并保留客户、待办、预约和手动编辑的草稿；旧车型引用会替换，计划来源会重新匹配。首次迁移前保留一份本地备份，不需要重置数据。
-
-## 可选模型服务
-
-复制 `.env.example` 为 `.env`，填写 Chat Completions 兼容服务的 base URL、模型名和 Key，然后运行 `sh start.sh`：
-
-```dotenv
-DRIVEFOLLOW_MODEL_API_KEY=your-key
-DRIVEFOLLOW_MODEL_BASE_URL=https://your-provider.example/v1
-DRIVEFOLLOW_MODEL_NAME=your-model
-PORT=4173
-```
-
-`start.sh` 加载 `.env`；直接用 `node server.mjs` 时需自行设置环境变量；`npm start` 会自动读取 `.env`。Key 只在服务端读取，`.env` 已忽略。调用会将所选客户记录与有效演示资料发往你配置的服务。示例数据为虚构；加入真实资料前需先取得相应授权并脱敏。
-
-未完成配置时继续使用规则模式。模型调用失败或超时会保留规则结果并明确显示回退。模型草稿未经自动事实认证，界面要求顾问核查。此版本未使用真实密钥验证远端提供商；适配器通过隔离的接口契约与故障回退测试。
-
-## 测试
-
-```sh
-sh start.sh --test
-```
-
-Node 测试覆盖拒绝联系、投诉、过期知识、缺失预算、排序、预约确认、冲突、去重、输入验证、模式标识、资料传递、模型回退、静态文件边界、蔚来车型 API、车型匹配、画像不冒充客户事实，以及旧浏览器数据迁移。
-
-浏览器验证使用系统提供的 Playwright，检查桌面 1440×1000 和移动端 390×844。测试脚本和截图保存在系统临时目录；产品运行不依赖 Playwright。
-
-## 文件结构
-
-- `server.mjs`：本地 HTTP 服务、输入校验、可选模型适配器。
-- `public/app.js`：界面交互、确认弹窗、持久化流程。
-- `public/modules/domain.js`：纯业务规则与状态变更。
-- `public/modules/data.js`：车型目录、虚构客户和模拟档期、知识合并入口。
-- `public/modules/nio-knowledge.js`：蔚来官方资料摘要、来源元数据、人群假设与使用边界。
-- `public/modules/views.js`：管线、知识与评测界面。
-- `public/modules/evaluation.js`：8 个可执行场景。
-- `public/modules/store.js`：版本化浏览器存储。
-- `public/portfolio.html`、`portfolio.md`：作品集说明与可下载文档。
-- `tests/`：独立的行为和 HTTP 集成测试。
-
-后续应先开展顾问访谈和任务测试，再决定是否接入真实 CRM 与门店试点。
-
-
-## 独立交付内容与后续 GitHub
-
-本目录包含网页、业务逻辑、演示数据、测试、设计文档和现有验证材料。全部运行路径在目录内解析。数据来自合成样例；官方产品知识为带来源和采集日期的静态摘要。
-
-- `start.sh` / `启动演示.command` / `start.bat`：macOS、Linux、Windows 启动入口。
-- `package.json`：标准启动和测试命令；无第三方运行依赖，因此不需要锁文件。
-- `.gitignore`：排除密钥、缓存、安装目录及运行数据库；`.env.example` 可提交。
-- `docs/项目案例.md`：与整份作品集的关系、职责和演示重点。
-- `docs/交付验证.md`：本次拆分后的验证结果。
-
-本目录是独立 GitHub 仓库的项目根目录。仓库地址：[Sienna-cat/drivefollow](https://github.com/Sienna-cat/drivefollow)。上传仓库只提供源码下载；要让面试官点击公网网址直接演示，还需后续托管。默认规则模式不需要 API Key，也不会拨打电话或发送企微消息。
+[需求与关键决策](docs/portfolio/v7/decisions.md) · [场景验收](docs/portfolio/v7/acceptance.md) · [迭代方法](docs/portfolio/v7/iteration.md)
