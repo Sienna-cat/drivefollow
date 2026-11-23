@@ -53,7 +53,7 @@ Files: public/index.html, app.js, styles.css, modules/icons.js, modules/views.js
 
 Files: public/portfolio.html, portfolio.css, portfolio.md; README.md, start.sh.
 
-- [x] Explain the problem hypothesis, target users, scope, decision flow, JD mapping and evidence boundaries.
+- [x] Explain the problem hypothesis, target users, scope, decision flow, product capability mapping and evidence boundaries.
 - [x] Link to the runnable demo and downloadable case study.
 - [x] Document one-command startup, optional model configuration, persistence scope and actual validation.
 
