@@ -9,7 +9,7 @@ V5，2026-11-23。以工作中的意向分流决策为主线，用四个独立�
 
 **[打开22页作品集PDF](portfolio-v5.pdf)** · [直接下载PDF](https://raw.githubusercontent.com/Sienna-cat/drivefollow/main/docs/portfolio/portfolio-v5.pdf)
 
-PDF含16页主线与6页证据附录。第4、5、16页可直接跳到本册附录，无需本地文件；原型源码入口在第15页。手机或浏览器预览未显示跳转时，可下载用系统PDF阅读器打开。
+PDF含16页主线与6页证据附录。第4、5、16页可直接跳到本册附录，无需本地文件；封面及第3、8、12、14页提供对应 Demo 直达链接；第15页集中展示全部在线 Demo 和源码。手机或浏览器预览未显示跳转时，可下载用系统PDF阅读器打开。
 
 ## 按岗位阅读
 
@@ -29,11 +29,11 @@ PDF含16页主线与6页证据附录。第4、5、16页可直接跳到本册附�
 
 | 项目 | 业务任务 | 入口 |
 | --- | --- | --- |
-| DriveFollow | 客户事实、知识来源、顾问确认及模拟试驾 | [源码与运行说明](https://github.com/Sienna-cat/drivefollow) |
-| DrivePulse | 车主客群、资格、人审、任务状态与恢复 | [源码与运行说明](https://github.com/Sienna-cat/drivepulse) |
-| DriveReach | 卖车对话、信息证据、转接/回拨与拒联 | [源码与运行说明](https://github.com/Sienna-cat/drivereach) |
-| LoopLab | 客群策略开发/冻结、地址候选与人工裁决 | [源码与运行说明](https://github.com/Sienna-cat/looplab) |
+| DriveFollow | 客户事实、知识来源、顾问确认及模拟试驾 | [在线 Demo](https://sienna-cat.github.io/drivefollow/) · [源码](https://github.com/Sienna-cat/drivefollow) |
+| DrivePulse | 车主客群、资格、人审、任务状态与恢复 | [在线 Demo](https://sienna-cat.github.io/drivepulse/) · [源码](https://github.com/Sienna-cat/drivepulse) |
+| DriveReach | 卖车对话、信息证据、转接/回拨与拒联 | [在线 Demo](https://sienna-cat.github.io/drivereach/) · [源码](https://github.com/Sienna-cat/drivereach) |
+| LoopLab | 客群策略开发/冻结、地址候选与人工裁决 | [在线 Demo](https://sienna-cat.github.io/looplab/) · [源码](https://github.com/Sienna-cat/looplab) |
 
-原型运行需下载对应仓库、安装Node.js 24+并按README启动；本入口是文档与源码，不是已部署的在线业务服务。使用模拟业务数据及执行，未接真实CRM/企微。DriveFollow可选模型只生成草稿，真实模型效果、生产任务稳定性和业务收益仍待验证。
+网页和 PDF 中的 Demo 链接可直接打开已部署的演示，无需登录、安装或启动服务。网页 Demo 在新标签页打开，便于返回作品集继续阅读。使用合成业务数据与浏览器规则，未接真实 CRM、电话或企微。真实模型效果、生产任务稳定性和业务收益仍待验证。
 
 本版未重新评分，也未补造公司原PRD、历史分母、模型结果、真实访谈或一线使用记录。原始聊天、完整简历和个人联系方式不在此公开目录。

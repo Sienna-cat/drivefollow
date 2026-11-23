@@ -8,3 +8,10 @@
 
 /* Online demos: clear primary actions, with comfortable touch targets. */
 @media screen{#demos .repo-actions{border:0;padding-top:0;margin-top:12px;gap:10px}#demos .repo-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:6px;background:var(--green);color:#fff;font-size:14px;font-weight:600;text-decoration:none}#demos .repo-actions a:hover{background:var(--ink);color:#fff}#demos .repo-url{font-size:13px;font-weight:400}#demos .repo-card{padding-bottom:18px}}
+
+/* Keep online links available when the portfolio is exported to PDF. */
+.demo-inline{font-weight:600;color:var(--green);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}.cover-demo{display:flex;align-items:center;gap:18px;margin:18px 0 0!important;font-size:16px!important}.cover-demo span{font-size:13px;color:var(--muted)}
+@media print{#demos .repo-actions{display:flex;gap:8px 12px;border:0;padding-top:0;margin-top:10px}#demos .repo-actions a{display:inline-flex;align-items:center;min-height:32px;padding:7px 12px;border-radius:4px;background:var(--green);color:#fff;font-size:12px;font-weight:600}#demos .repo-url{font-size:13px;font-weight:400}}
+@media screen and (max-width:600px){.cover-demo{align-items:flex-start;flex-direction:column;gap:8px}}
+
+.cover .demo-inline{color:#deefc8;border-color:#9fc1a9}.cover .cover-demo span{color:#b6cbc1}

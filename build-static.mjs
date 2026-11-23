@@ -10,3 +10,6 @@ for (const file of ['index.html', 'portfolio.html']) {
 
 const app = await readFile('dist/app.js', 'utf8');
 await writeFile('dist/app.js', app.replace('默认规则模式 · 配置模型后可生成模型草稿', '浏览器规则演示 · 无需配置或登录'));
+
+// The website download and repository document use the same verified PDF.
+await cp('docs/portfolio/portfolio-v5.pdf', 'dist/portfolio/portfolio.pdf');
