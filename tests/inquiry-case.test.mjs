@@ -294,3 +294,122 @@ test('malformed nested persisted audit entries recover rather than crashing the 
   assert.equal(result.recovered, true);
   assert.equal(result.state.audit[0].type, 'case_started');
 });
+
+test('deferred or conditional quote instructions cannot create immediate contact consent', () => {
+  for (const text of [
+    '报价发已经加的企微，等我确认后再发',
+    '报价发已经加的企微，明天再发',
+    '报价发已经加的企微，如果价格合适再发',
+    '报价发已经加的企微，先别发',
+  ]) {
+    const state = start();
+    api.updateConditions(state, conditions, {}, NOW);
+    api.setRelationship(state, 'verified', NOW);
+    api.recordQuoteCheck(state, 'valid', NOW);
+    api.appendCustomerTurn(state, text, NOW);
+    assert.equal(state.analysis.permissions.wecom.quote.status, 'unknown', text);
+    assert.equal(state.analysis.reviewRequired, true, text);
+    assert.equal(api.contactEligibility(state, NOW).allowed, false, text);
+    assert.throws(() => api.confirmTask(state, api.buildCasePlan(state, 'customer_contact', NOW), NOW), /不允许/);
+  }
+});
+
+test('new sending conditions replace earlier consent and human review alone cannot restore it', () => {
+  for (const text of ['等我确认后再发', '暂时先别发', '我还没确认，先不要发', '我没同意报价发已经加的企微']) {
+    const state = ready();
+    const oldTask = api.confirmTask(state, api.buildCasePlan(state, 'customer_contact', NOW), NOW);
+    api.appendCustomerTurn(state, text, NOW);
+    assert.equal(state.analysis.permissions.wecom.quote.status, 'unknown', text);
+    assert.deepEqual(state.analysis.permissions.wecom.quote.evidenceTurnIds, ['T3']);
+    assert.equal(state.analysis.reviewRequired, true, text);
+    assert.equal(api.executeTask(state, oldTask.id, { now: NOW }).ok, false);
+    api.reviewUnknownTurns(state, NOW);
+    assert.equal(api.contactEligibility(state, NOW).allowed, false, 'review is not customer consent');
+    api.appendCustomerTurn(state, '报价发已经加的企微', NOW);
+    assert.equal(api.contactEligibility(state, NOW).allowed, true, 'new unconditional customer permission can authorize this quote');
+  }
+});
+
+test('partly understood permission turns fail closed without enumerating the unknown qualifier', () => {
+  for (const text of ['报价发已经加的企微，先给我看一眼内容', '先让我过目一下', '有点贵，发之前先经过我']) {
+    const state = ready();
+    api.appendCustomerTurn(state, text, NOW);
+    assert.equal(state.analysis.permissions.wecom.quote.status, 'unknown', text);
+    assert.equal(state.analysis.reviewRequired, true, text);
+    api.reviewUnknownTurns(state, NOW);
+    assert.equal(api.contactEligibility(state, NOW).allowed, false, text);
+  }
+});
+
+test('a contextual withdrawal after consent cancels the existing quote task', () => {
+  const state = ready();
+  const task = api.confirmTask(state, api.buildCasePlan(state, 'customer_contact', NOW), NOW);
+  api.appendCustomerTurn(state, '不用发报价了', NOW);
+  assert.equal(state.analysis.permissions.wecom.quote.status, 'denied');
+  assert.equal(task.status, 'cancelled');
+  assert.equal(api.executeTask(state, task.id, { now: NOW }).ok, false);
+});
+
+test('an explicit cash correction replaces prior finance and clears its term with current evidence', () => {
+  const state = start();
+  api.appendCustomerTurn(state, '那分三年呢', NOW);
+  api.updateConditions(state, { downPayment: '30%' }, {}, NOW);
+  api.appendCustomerTurn(state, '不是分三年，是全款', NOW);
+  assert.equal(state.analysis.inquiry.financeMonths, null);
+  assert.equal(state.conditions.payment.value, 'cash');
+  assert.equal(state.conditions.loanMonths.value, '');
+  assert.equal(state.conditions.downPayment.value, '');
+  assert.deepEqual(state.conditions.payment.evidenceTurnIds, ['T3']);
+  assert.equal(state.analysis.reviewRequired, false);
+});
+
+test('an explicit reverse correction can replace cash with three-year financing', () => {
+  const state = ready();
+  api.appendCustomerTurn(state, '不是全款，是分三年', NOW);
+  assert.equal(state.conditions.payment.value, 'finance');
+  assert.equal(state.conditions.loanMonths.value, '36');
+  assert.deepEqual(state.conditions.payment.evidenceTurnIds, ['T3']);
+  assert.equal(state.analysis.reviewRequired, false);
+});
+
+test('negated and contradictory payment phrases clear stale finance and require clarification', () => {
+  for (const text of ['我没说分三年', '不是分三年', '分三年，全款也行', '不是全款，也不是分三年']) {
+    const state = ready();
+    api.appendCustomerTurn(state, '那分三年呢', NOW);
+    api.appendCustomerTurn(state, text, NOW);
+    assert.equal(state.analysis.inquiry.financeMonths, null, text);
+    assert.equal(state.conditions.payment.value, '', text);
+    assert.equal(state.conditions.loanMonths.value, '', text);
+    assert.equal(state.analysis.reviewRequired, true, text);
+    api.reviewUnknownTurns(state, NOW);
+    assert.ok(api.contactEligibility(state, NOW).missing.includes('payment'));
+  }
+});
+
+test('a same-sentence negated finance mention cannot populate a default case as finance', () => {
+  const state = start();
+  api.appendCustomerTurn(state, '不是分三年，是全款', NOW);
+  assert.equal(state.conditions.payment.value, 'cash');
+  assert.equal(state.analysis.inquiry.financeMonths, null);
+});
+
+test('nested evidence arrays with invalid types recover before rendering references', () => {
+  const mutations = [
+    state => { state.relationship.evidenceTurnIds = 'T1'; },
+    state => { state.audit[0].evidenceTurnIds = 'T1'; },
+    state => { state.relationship.evidenceTurnIds = { length: 1 }; },
+    state => { state.audit[0].evidenceTurnIds = [null]; },
+    state => { state.conditions.city.evidenceTurnIds = [42]; },
+    state => { state.reviewedTurnIds = [null]; },
+  ];
+  for (const mutate of mutations) {
+    const state = ready();
+    mutate(state);
+    const storage = memoryStorage({ [api.CASE_STORAGE_KEY]: JSON.stringify(state), 'drivefollow-demo-v1': 'untouched' });
+    const result = api.loadCase(storage, NOW);
+    assert.equal(result.recovered, true);
+    assert.equal(result.state.transcript.length, 1);
+    assert.doesNotThrow(() => result.state.relationship.evidenceTurnIds.map(id => id));
+    assert.equal(storage.getItem('drivefollow-demo-v1'), 'untouched');
+  }
+});
