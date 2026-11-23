@@ -1,5 +1,14 @@
 # DriveFollow · 可运行 Web Demo + 作品集
 
+## V7 连续询价案例
+
+[直接体验](https://sienna-cat.github.io/drivefollow/inquiry.html) · [产品任务与验收](https://sienna-cat.github.io/drivefollow/evidence.html) · [22页专业作品集](https://sienna-cat.github.io/drivefollow/portfolio/)
+
+收到同一条“贵、不急、问落地价”的合成对话后，逐轮保存咨询/时间/许可与证据；补条件，模拟核价与企微关系核验，再由人工确认任务。创建与执行分开、防重、撤回取消、执行前复查；独立浏览器存储与JSON导出。未知表达保留人工复核，规则不等同通用模型。旧销售工作台保留。
+
+实现：`public/inquiry.html`、`public/inquiry.js`、`public/modules/inquiry-case.js`；回归：`tests/inquiry-case.test.mjs`。任务、关系、知识与触达均为模拟，不提供真实车价。新案例不调用模型；旧工作台的可选模型接口仅用于草稿。
+
+
 ## 在线 Demo（无需安装）
 
 **[点击直接操作 Drivefollow →](https://sienna-cat.github.io/drivefollow/)**
