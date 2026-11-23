@@ -2,6 +2,8 @@
 
 面向汽车一线销售顾问的跟进与试驾邀约工作流演示。独立目录，无需安装第三方依赖。
 
+**面试阅读入口：[V5 作品集主册与案例验证](docs/portfolio/README.md)**。含汽车营销、课程咨询两条路线，历史指标口径及观望分流规则对照。
+
 ## 快速启动（独立项目版）
 
 需要 [Node.js 24 LTS](https://nodejs.org/) 或更高版本，以及 Chrome、Edge、Firefox 或 Safari。四个项目都没有第三方运行依赖，无需 `npm install`，也不需要安装 Codex。

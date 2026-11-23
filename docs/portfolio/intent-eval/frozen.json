@@ -1,0 +1,391 @@
+[
+  {
+    "id": "F01",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "预算要再掂量，现在落地多少，包含哪些费用？"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": "K01",
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F02",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "预算要再掂量，现在落地多少，包含哪些费用？"
+    ],
+    "knowledge": "not_found",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": "K01",
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F03",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "预算要再掂量，现在落地多少，包含哪些费用？"
+    ],
+    "knowledge": "conflict",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": "K01",
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F04",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "预算要再掂量，现在落地多少，包含哪些费用？"
+    ],
+    "knowledge": "tool_error",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": "K01",
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F05",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "月底优惠还有效吗？"
+    ],
+    "knowledge": "expired",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F06",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "异地买这配置需要多少费用？"
+    ],
+    "knowledge": "missing_conditions",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "clarify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F07",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "先不买，价格表让我了解一下。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F08",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "替同事问首付，不要给我安排销售。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F09",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "暂时不需要，也不想了解。"
+    ],
+    "knowledge": "not_found",
+    "reference": {
+      "intent": "declined",
+      "phone": "unknown",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F10",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "这车补贴多少？",
+      "不用介绍了，已经买了别家的。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "declined",
+      "phone": "unknown",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F11",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "别打电话，报价发我已经加的企微。"
+    ],
+    "knowledge": "conflict",
+    "reference": {
+      "intent": "consulting",
+      "phone": "denied",
+      "action": "verify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F12",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "首付多少？",
+      "什么都别发，不要再联系。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "declined",
+      "phone": "denied",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F13",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "嗯，知道了。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "action": "clarify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F14",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "已经买了其他品牌，不用介绍。"
+    ],
+    "knowledge": "tool_error",
+    "reference": {
+      "intent": "declined",
+      "phone": "unknown",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F15",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "月供两千内我再考虑，首付多少？不急。"
+    ],
+    "knowledge": "not_found",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F16",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "我可没说不买，只是想弄明白总共要掏几张大票。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F17",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "首付多少？",
+      "那分三年呢？"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F18",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "优惠是多少？",
+      "就这个数，我还得和家里商量一下。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F19",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "别误会，不是觉得贵，我想知道顶配和入门差在哪。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F20",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "免谈，往后也别找我。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "declined",
+      "phone": "denied",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F21",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "车已提走，别再打电话。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "declined",
+      "phone": "denied",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F22",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "价格能公开发我看看吗？我是代朋友问的。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F23",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "再便宜也不买，不用介绍了。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "declined",
+      "phone": "unknown",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "F24",
+    "split": "frozen_check",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "我不想了解。",
+      "等一下，我想先问报价再决定。"
+    ],
+    "knowledge": "not_found",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  }
+]

@@ -1,0 +1,2836 @@
+[
+  {
+    "id": "D01",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D01",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "贵是贵，落地多少？"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "贵是贵，落地多少？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.421038,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D02",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D02",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "再看看，优惠是多少？"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "再看看，优惠是多少？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.213756,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D03",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D03",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "首付多少？"
+      ],
+      "knowledge": "missing_conditions",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "首付多少？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.008118,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D04",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D04",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "试驾怎么约？"
+      ],
+      "knowledge": "tool_error",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "试驾怎么约？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.003819,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D05",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D05",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "不想了解了。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "不想了解了。",
+      "reason": "未命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.195311,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D06",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D06",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "再便宜也不买。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "再便宜也不买。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.005957,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D07",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D07",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "不要再联系。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "denied",
+      "all_stop": true,
+      "evidence_turn": 1,
+      "evidence_text": "不要再联系。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003162,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D08",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D08",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "嗯，再说吧。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "unknown",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "嗯，再说吧。",
+      "reason": "未命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004409,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D09",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D09",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "别打电话，报价发已有企微。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "denied",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "denied",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "别打电话，报价发已有企微。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.002893,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D10",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D10",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "优惠多少？",
+        "已经买了，不要再联系。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "denied",
+      "all_stop": true,
+      "evidence_turn": 2,
+      "evidence_text": "已经买了，不要再联系。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003635,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D11",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D11",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "先不买，我就是问价格。"
+      ],
+      "knowledge": "expired",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "先不买，我就是问价格。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.002919,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D12",
+    "split": "development",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "D12",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "课程外的闲聊。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "unknown",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "课程外的闲聊。",
+      "reason": "未命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003535,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D01",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D01",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "贵是贵，落地多少？"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "贵是贵，落地多少？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.404943,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D02",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D02",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "再看看，优惠是多少？"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "再看看，优惠是多少？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.007477,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D03",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D03",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "首付多少？"
+      ],
+      "knowledge": "missing_conditions",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "首付多少？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004652,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D04",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D04",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "试驾怎么约？"
+      ],
+      "knowledge": "tool_error",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "试驾怎么约？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003937,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D05",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D05",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "不想了解了。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "不想了解了。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003565,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D06",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D06",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "再便宜也不买。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "再便宜也不买。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003345,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D07",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D07",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "不要再联系。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "denied",
+      "all_stop": true,
+      "evidence_turn": 1,
+      "evidence_text": "不要再联系。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.002744,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D08",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D08",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "嗯，再说吧。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "unknown",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "嗯，再说吧。",
+      "reason": "证据不足，保留未知",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.073935,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D09",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D09",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "别打电话，报价发已有企微。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "denied",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "denied",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "别打电话，报价发已有企微。",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.008725,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D10",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D10",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "优惠多少？",
+        "已经买了，不要再联系。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "denied",
+      "all_stop": true,
+      "evidence_turn": 2,
+      "evidence_text": "已经买了，不要再联系。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003643,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D11",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D11",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "先不买，我就是问价格。"
+      ],
+      "knowledge": "expired",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "先不买，我就是问价格。",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004523,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "D12",
+    "split": "development",
+    "variant": "revised_rule",
+    "input": {
+      "id": "D12",
+      "split": "development",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "课程外的闲聊。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "unknown",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "课程外的闲聊。",
+      "reason": "证据不足，保留未知",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004739,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F01",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F01",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "预算要再掂量，现在落地多少，包含哪些费用？"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": "K01",
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "预算要再掂量，现在落地多少，包含哪些费用？",
+      "reason": "简单关键词命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.009483,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F02",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F02",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "预算要再掂量，现在落地多少，包含哪些费用？"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": "K01",
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "预算要再掂量，现在落地多少，包含哪些费用？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.003698,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F03",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F03",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "预算要再掂量，现在落地多少，包含哪些费用？"
+      ],
+      "knowledge": "conflict",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": "K01",
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "预算要再掂量，现在落地多少，包含哪些费用？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.002968,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F04",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F04",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "预算要再掂量，现在落地多少，包含哪些费用？"
+      ],
+      "knowledge": "tool_error",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": "K01",
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "预算要再掂量，现在落地多少，包含哪些费用？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.002791,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F05",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F05",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "月底优惠还有效吗？"
+      ],
+      "knowledge": "expired",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "月底优惠还有效吗？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.002457,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F06",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F06",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "异地买这配置需要多少费用？"
+      ],
+      "knowledge": "missing_conditions",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "异地买这配置需要多少费用？",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.00244,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F07",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F07",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "先不买，价格表让我了解一下。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "先不买，价格表让我了解一下。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.003607,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F08",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F08",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "替同事问首付，不要给我安排销售。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "替同事问首付，不要给我安排销售。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.003445,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F09",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F09",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "暂时不需要，也不想了解。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "暂时不需要，也不想了解。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.002704,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F10",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F10",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "这车补贴多少？",
+        "不用介绍了，已经买了别家的。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 2,
+      "evidence_text": "不用介绍了，已经买了别家的。",
+      "reason": "简单关键词命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.005562,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F11",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F11",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "别打电话，报价发我已经加的企微。"
+      ],
+      "knowledge": "conflict",
+      "reference": {
+        "intent": "consulting",
+        "phone": "denied",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "denied",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "别打电话，报价发我已经加的企微。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.004549,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F12",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F12",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "首付多少？",
+        "什么都别发，不要再联系。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "denied",
+      "all_stop": true,
+      "evidence_turn": 2,
+      "evidence_text": "什么都别发，不要再联系。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003351,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F13",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F13",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "嗯，知道了。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "unknown",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "嗯，知道了。",
+      "reason": "未命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003408,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F14",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F14",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "已经买了其他品牌，不用介绍。"
+      ],
+      "knowledge": "tool_error",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "已经买了其他品牌，不用介绍。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.002627,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F15",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F15",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "月供两千内我再考虑，首付多少？不急。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "月供两千内我再考虑，首付多少？不急。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.002554,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F16",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F16",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "我可没说不买，只是想弄明白总共要掏几张大票。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "我可没说不买，只是想弄明白总共要掏几张大票。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.00327,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F17",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F17",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "首付多少？",
+        "那分三年呢？"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 2,
+      "evidence_text": "那分三年呢？",
+      "reason": "简单关键词命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003642,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F18",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F18",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "优惠是多少？",
+        "就这个数，我还得和家里商量一下。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 2,
+      "evidence_text": "就这个数，我还得和家里商量一下。",
+      "reason": "简单关键词命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003835,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F19",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F19",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "别误会，不是觉得贵，我想知道顶配和入门差在哪。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "别误会，不是觉得贵，我想知道顶配和入门差在哪。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.005065,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F20",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F20",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "免谈，往后也别找我。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "免谈，往后也别找我。",
+      "reason": "未命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [
+      "intent",
+      "phone",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.003917,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F21",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F21",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "车已提走，别再打电话。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "denied",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "车已提走，别再打电话。",
+      "reason": "未命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.00376,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F22",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F22",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "价格能公开发我看看吗？我是代朋友问的。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "价格能公开发我看看吗？我是代朋友问的。",
+      "reason": "简单关键词命中",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003549,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F23",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F23",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "再便宜也不买，不用介绍了。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "再便宜也不买，不用介绍了。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003407,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F24",
+    "split": "frozen",
+    "variant": "failure_baseline",
+    "input": {
+      "id": "F24",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "我不想了解。",
+        "等一下，我想先问报价再决定。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 2,
+      "evidence_text": "等一下，我想先问报价再决定。",
+      "reason": "失败模式：负向词或知识不足直接结束",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.002681,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F01",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F01",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "预算要再掂量，现在落地多少，包含哪些费用？"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": "K01",
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "预算要再掂量，现在落地多少，包含哪些费用？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004886,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F02",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F02",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "预算要再掂量，现在落地多少，包含哪些费用？"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": "K01",
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "预算要再掂量，现在落地多少，包含哪些费用？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004026,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F03",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F03",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "预算要再掂量，现在落地多少，包含哪些费用？"
+      ],
+      "knowledge": "conflict",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": "K01",
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "预算要再掂量，现在落地多少，包含哪些费用？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003956,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F04",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F04",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "预算要再掂量，现在落地多少，包含哪些费用？"
+      ],
+      "knowledge": "tool_error",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": "K01",
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "预算要再掂量，现在落地多少，包含哪些费用？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003895,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F05",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F05",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "月底优惠还有效吗？"
+      ],
+      "knowledge": "expired",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "月底优惠还有效吗？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003647,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F06",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F06",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "异地买这配置需要多少费用？"
+      ],
+      "knowledge": "missing_conditions",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "异地买这配置需要多少费用？",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.005625,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F07",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F07",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "先不买，价格表让我了解一下。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "先不买，价格表让我了解一下。",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004129,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F08",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F08",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "替同事问首付，不要给我安排销售。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "替同事问首付，不要给我安排销售。",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004033,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F09",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F09",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "暂时不需要，也不想了解。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "暂时不需要，也不想了解。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003421,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F10",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F10",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "这车补贴多少？",
+        "不用介绍了，已经买了别家的。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 2,
+      "evidence_text": "不用介绍了，已经买了别家的。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003587,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F11",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F11",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "别打电话，报价发我已经加的企微。"
+      ],
+      "knowledge": "conflict",
+      "reference": {
+        "intent": "consulting",
+        "phone": "denied",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "denied",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "别打电话，报价发我已经加的企微。",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.0041,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F12",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F12",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "首付多少？",
+        "什么都别发，不要再联系。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "denied",
+      "all_stop": true,
+      "evidence_turn": 2,
+      "evidence_text": "什么都别发，不要再联系。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.002751,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F13",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F13",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "嗯，知道了。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "unknown",
+        "phone": "unknown",
+        "action": "clarify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "嗯，知道了。",
+      "reason": "证据不足，保留未知",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003711,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F14",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F14",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "已经买了其他品牌，不用介绍。"
+      ],
+      "knowledge": "tool_error",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "已经买了其他品牌，不用介绍。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003114,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F15",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F15",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "月供两千内我再考虑，首付多少？不急。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "月供两千内我再考虑，首付多少？不急。",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.004056,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F16",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F16",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "我可没说不买，只是想弄明白总共要掏几张大票。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "我可没说不买，只是想弄明白总共要掏几张大票。",
+      "reason": "无继续咨询的明确拒绝",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.004767,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F17",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F17",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "首付多少？",
+        "那分三年呢？"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 2,
+      "evidence_text": "那分三年呢？",
+      "reason": "证据不足，保留未知",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.003743,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F18",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F18",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "优惠是多少？",
+        "就这个数，我还得和家里商量一下。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 2,
+      "evidence_text": "就这个数，我还得和家里商量一下。",
+      "reason": "证据不足，保留未知",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.00401,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F19",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F19",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "别误会，不是觉得贵，我想知道顶配和入门差在哪。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "别误会，不是觉得贵，我想知道顶配和入门差在哪。",
+      "reason": "证据不足，保留未知",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.004883,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F20",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F20",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "免谈，往后也别找我。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "免谈，往后也别找我。",
+      "reason": "证据不足，保留未知",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [
+      "intent",
+      "phone",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.004141,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F21",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F21",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "车已提走，别再打电话。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "denied",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "unknown",
+      "phone": "denied",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "车已提走，别再打电话。",
+      "reason": "证据不足，保留未知",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "clarify"
+    },
+    "errors": [
+      "intent",
+      "action"
+    ],
+    "passed": false,
+    "rule_cpu_ms": 0.004377,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F22",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F22",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "价格能公开发我看看吗？我是代朋友问的。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "answer"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "价格能公开发我看看吗？我是代朋友问的。",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "answer"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003538,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F23",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F23",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "再便宜也不买，不用介绍了。"
+      ],
+      "knowledge": "grounded",
+      "reference": {
+        "intent": "declined",
+        "phone": "unknown",
+        "action": "end"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "declined",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 1,
+      "evidence_text": "再便宜也不买，不用介绍了。",
+      "reason": "最新明确拒绝或停止联系",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "end"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.003243,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  },
+  {
+    "id": "F24",
+    "split": "frozen",
+    "variant": "revised_rule",
+    "input": {
+      "id": "F24",
+      "split": "frozen_check",
+      "data_type": "synthetic_authored",
+      "turns": [
+        "我不想了解。",
+        "等一下，我想先问报价再决定。"
+      ],
+      "knowledge": "not_found",
+      "reference": {
+        "intent": "consulting",
+        "phone": "unknown",
+        "action": "verify"
+      },
+      "pair_group": null,
+      "reference_status": "assistant_draft_not_human_adjudicated"
+    },
+    "actual": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "all_stop": false,
+      "evidence_turn": 2,
+      "evidence_text": "等一下，我想先问报价再决定。",
+      "reason": "保留咨询信号；知识状态不参与意向分类",
+      "priority": "not_assessed",
+      "execution": "human_confirmation_required",
+      "action": "verify"
+    },
+    "errors": [],
+    "passed": true,
+    "rule_cpu_ms": 0.00388,
+    "model": null,
+    "external_calls": 0,
+    "api_cost": null
+  }
+]

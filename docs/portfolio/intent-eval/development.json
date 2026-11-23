@@ -1,0 +1,195 @@
+[
+  {
+    "id": "D01",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "贵是贵，落地多少？"
+    ],
+    "knowledge": "not_found",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D02",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "再看看，优惠是多少？"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "answer"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D03",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "首付多少？"
+    ],
+    "knowledge": "missing_conditions",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "clarify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D04",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "试驾怎么约？"
+    ],
+    "knowledge": "tool_error",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D05",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "不想了解了。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "declined",
+      "phone": "unknown",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D06",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "再便宜也不买。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "declined",
+      "phone": "unknown",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D07",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "不要再联系。"
+    ],
+    "knowledge": "not_found",
+    "reference": {
+      "intent": "declined",
+      "phone": "denied",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D08",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "嗯，再说吧。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "action": "clarify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D09",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "别打电话，报价发已有企微。"
+    ],
+    "knowledge": "not_found",
+    "reference": {
+      "intent": "consulting",
+      "phone": "denied",
+      "action": "verify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D10",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "优惠多少？",
+      "已经买了，不要再联系。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "declined",
+      "phone": "denied",
+      "action": "end"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D11",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "先不买，我就是问价格。"
+    ],
+    "knowledge": "expired",
+    "reference": {
+      "intent": "consulting",
+      "phone": "unknown",
+      "action": "verify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  },
+  {
+    "id": "D12",
+    "split": "development",
+    "data_type": "synthetic_authored",
+    "turns": [
+      "课程外的闲聊。"
+    ],
+    "knowledge": "grounded",
+    "reference": {
+      "intent": "unknown",
+      "phone": "unknown",
+      "action": "clarify"
+    },
+    "pair_group": null,
+    "reference_status": "assistant_draft_not_human_adjudicated"
+  }
+]

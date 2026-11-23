@@ -1,0 +1,15 @@
+{
+  "dataset": "hesitation-routing-v1",
+  "created_at": "2026-11-23T07:44:34.574268+00:00",
+  "freeze_before_first_run": true,
+  "development_n": 12,
+  "frozen_check_n": 24,
+  "independent_test": false,
+  "labeler": "AI助手编写预期，未经业务双人标注",
+  "design_exposure": "规则与样例由同一助手整理；冻结仅锁版本，不表示独立盲测",
+  "hashes": {
+    "rules.py": "bb2768d66b4dffee093ff3a8fb4f47b359e0756deef74df4a51a4bf89e7dfeb7",
+    "development.json": "f86f249ccdc042b96b9dfdbf137b4a3e44cc4458f03c0c92d250b2b3382a8bf2",
+    "frozen.json": "57c1fb03213186f6ac83c9de5781af120a6f44a5623834622f407ac8ebbd0f5c"
+  }
+}

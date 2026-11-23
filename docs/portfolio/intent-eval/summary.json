@@ -1,0 +1,89 @@
+{
+  "development": {
+    "failure_baseline": {
+      "n": 12,
+      "all_fields_pass": 5,
+      "intent_correct": 5,
+      "consultation_n": 6,
+      "consultation_misclassified_declined": 6,
+      "phone_stop_n": 3,
+      "phone_stop_missed": 0,
+      "failed_ids": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D09",
+        "D11"
+      ]
+    },
+    "revised_rule": {
+      "n": 12,
+      "all_fields_pass": 12,
+      "intent_correct": 12,
+      "consultation_n": 6,
+      "consultation_misclassified_declined": 0,
+      "phone_stop_n": 3,
+      "phone_stop_missed": 0,
+      "failed_ids": []
+    }
+  },
+  "frozen": {
+    "failure_baseline": {
+      "n": 24,
+      "all_fields_pass": 9,
+      "intent_correct": 9,
+      "consultation_n": 16,
+      "consultation_misclassified_declined": 12,
+      "phone_stop_n": 4,
+      "phone_stop_missed": 1,
+      "failed_ids": [
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F10",
+        "F11",
+        "F15",
+        "F16",
+        "F19",
+        "F20",
+        "F21",
+        "F24"
+      ]
+    },
+    "revised_rule": {
+      "n": 24,
+      "all_fields_pass": 18,
+      "intent_correct": 18,
+      "consultation_n": 16,
+      "consultation_misclassified_declined": 1,
+      "phone_stop_n": 4,
+      "phone_stop_missed": 1,
+      "failed_ids": [
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F21"
+      ]
+    }
+  },
+  "generated_at": "2026-11-23T07:44:34.936614+00:00",
+  "dataset": "hesitation-routing-v1",
+  "status": "synthetic_rule_comparison_executed",
+  "model_comparison": "not_run",
+  "production_baseline": false,
+  "independent_test": false,
+  "timing_scope": "仅本机纯规则函数单次CPU计时，非模型延迟或线上SLA",
+  "cost_scope": "没有外部API调用；模型成本未测，未计开发/标注/人工成本",
+  "knowledge_pair": {
+    "failure_baseline": false,
+    "revised_rule": true
+  }
+}
